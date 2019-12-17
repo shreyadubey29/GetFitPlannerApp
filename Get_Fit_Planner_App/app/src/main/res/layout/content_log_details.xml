@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LogDetailsActivity"
+    tools:showIn="@layout/activity_log_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="@string/date_label"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/givenDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.33"
+                        android:onClick="showDateChanger"
+                        app:srcCompat="@drawable/images4" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="@string/weight_label"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/weightSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center|center_horizontal"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/weightUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:text="@string/weight_unit"
+                        android:textColor="#0F0F0F" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="@string/waterIntake"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/waterSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center|center_horizontal"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/glassUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:text="@string/glassUnit"
+                        android:textColor="#0F0F0F" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="@string/currCalorie"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/calorieInSummary"
+                        android:layout_width="172dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center|center_horizontal"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/calUnit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:text="@string/calorieUnit"
+                        android:textColor="#0F0F0F"
+                        android:textSize="14sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="0.33"
+                        android:text="@string/currCalorieBurn"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/calorieOutSummary"
+                        android:layout_width="172dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/calUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:text="@string/calorieUnit"
+                        android:textColor="#0F0F0F" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="@string/calorie_balance"
+                        android:textColor="#304FFE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/calorieBalanceSummary"
+                        android:layout_width="172dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center|center_horizontal"
+                        android:textColor="#0F0F0F"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/calUnit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:text="@string/calorieUnit"
+                        android:textColor="#0F0F0F" />
+                </TableRow>
+            </TableLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart1"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"></com.github.mikephil.charting.charts.PieChart>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart2"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"></com.github.mikephil.charting.charts.PieChart>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
